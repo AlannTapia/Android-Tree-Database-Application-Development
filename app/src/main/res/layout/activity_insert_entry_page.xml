@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/leaf_shape"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Leaf Shape"
+        android:textSize="24dp"
+        app:layout_constraintTop_toBottomOf="@+id/leaf_color"
+        tools:layout_editor_absoluteX="16dp" />
+
+    <EditText
+        android:id="@+id/nation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nation"
+        android:textSize="24dp"
+        app:layout_constraintTop_toBottomOf="@+id/leaf_shape" />
+
+    <EditText
+        android:id="@+id/region"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Region"
+        android:textSize="24dp"
+        app:layout_constraintTop_toBottomOf="@+id/nation" />
+
+    <EditText
+        android:id="@+id/seeds"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Has Seeds?  (Y/N)"
+        android:textSize="24dp"
+        app:layout_constraintTop_toBottomOf="@+id/region"
+        tools:layout_editor_absoluteX="16dp" />
+
+    <EditText
+        android:id="@+id/leaf_color"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Leaf Color"
+        android:textSize="24dp"
+        app:layout_constraintTop_toBottomOf="@+id/trunk_diameter" />
+
+    <EditText
+        android:id="@+id/trunk_diameter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Trunk Diameter (Inches)"
+        android:textSize="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tree_height" />
+
+    <Button
+        android:id="@+id/btnInsert2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Insert"
+        android:textSize="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/seeds" />
+
+    <Button
+        android:id="@+id/btndelete2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="68dp"
+        android:text="Delete"
+        android:textSize="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/seeds" />
+
+    <TextView
+        android:id="@+id/tree_entry_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Create New Tree Entry:"
+        android:textSize="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Current User"
+        android:textSize="24dp"
+        app:layout_constraintTop_toBottomOf="@+id/tree_entry_text" />
+
+    <EditText
+        android:id="@+id/tree_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Tree Name (Primary Key)"
+        android:textSize="24dp"
+        app:layout_constraintTop_toBottomOf="@+id/username" />
+
+    <EditText
+        android:id="@+id/trunk_color"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Trunk Color"
+        android:textSize="24dp"
+        app:layout_constraintTop_toBottomOf="@+id/tree_name" />
+
+    <EditText
+        android:id="@+id/tree_height"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Tree Height (Feet)"
+        android:textSize="24dp"
+        app:layout_constraintTop_toBottomOf="@+id/trunk_color" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
